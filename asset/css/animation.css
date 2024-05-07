@@ -1,0 +1,16 @@
+@keyframes lightShow {
+
+    0% {
+        background-color: #C40C0C;
+    }
+
+    33% {
+        background-color: #FF8A08;
+    }
+
+    100% {
+        background-color: #FF8A08;
+        opacity: 10%;
+    }
+
+}

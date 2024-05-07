@@ -10,66 +10,10 @@
     <title>Knight Rider</title>
 
     <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="stylesheet" href="asset/css/customization.css">
+    <link rel="stylesheet" href="asset/css/animation.css">
 
 </head>
-
-<style>
-
-    body {
-        text-align: center;
-        margin-top: 35vh;
-        background-color: black;
-    }
-
-    section {
-        display: flex;
-        justify-content: center;
-        margin: 50px;
-
-    }
-
-    span {
-        color: white;
-        font-family: "Outfit Light", sans-serif;
-        font-size: clamp(1rem, 7vw, 2rem);
-    }
-
-    section>div {
-        width: 10vw;
-        height: 5vh;
-        border: 1px solid white;
-    }
-
-    #ButtonContainer>button {
-        font-family: "Outfit Light", sans-serif;
-        width: 15vw;
-        height: 5vh;
-        border: none;
-        border-radius: 10px;
-        margin-right: 20px;
-    }
-
-    @keyframes lightShow {
-
-        0% {
-            background-color: #C40C0C;
-        }
-
-        33% {
-            background-color: #FF8A08;
-        }
-
-        100% {
-            background-color: #FF8A08;
-            opacity: 10%;
-        }
-
-    }
-
-
-
-
-</style>
 
 
 <body>
@@ -146,14 +90,6 @@
         $("#stop").eq(0).on('click', () => {
             $("section>div").css({display: 'none'});
         });
-
-
-
-
-
-
-
-
 
     </script>
 </body>
