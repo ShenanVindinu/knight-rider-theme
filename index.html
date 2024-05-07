@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="knight Rider">
+    <meta name="keywords" content="knight rider kit light pattern">
+    <meta name="author" content="Shenan Vindinu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Knight Rider</title>
+
+    <link rel="stylesheet" href="asset/css/normalize.css">
+
+</head>
+
+<style>
+
+    body {
+        text-align: center;
+        margin-top: 35vh;
+        background-color: black;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+
+    }
+
+    span {
+        color: white;
+        font-family: "Outfit Light", sans-serif;
+        font-size: clamp(1rem, 7vw, 2rem);
+    }
+
+    section>div {
+        width: 10vw;
+        height: 5vh;
+        border: 1px solid white;
+    }
+
+    #ButtonContainer>button {
+        font-family: "Outfit Light", sans-serif;
+        width: 15vw;
+        height: 5vh;
+        border: none;
+        border-radius: 10px;
+        margin-right: 20px;
+
+    }
+
+    @keyframes lightShow {
+
+        0% {
+            background-color: #C40C0C;
+        }
+
+        33% {
+            background-color: #FF8A08;
+        }
+
+        100% {
+            background-color: #FF8A08;
+            opacity: 10%;
+        }
+
+    }
+
+
+
+
+</style>
+
+
+<body>
+
+
+
+
+    <span>
+    JavaScript Knight Rider
+    </span>
+
+
+    <section>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </section>
+
+
+    <div id="ButtonContainer">
+
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+
+    </div>
+
+
+
+
+    <script src="asset/lib/jquery-3.7.1.min.js"></script>
+    <script src="asset/lib/jquery-ui.min.js"></script>
+    <script>
+
+        $("#start").eq(0).on('click', () => {
+            $("section>div:nth-child(1)").animate({'backgroundColor': '#FF8A08'}, "fast");
+        });
+
+    </script>
+</body>
+</html>
