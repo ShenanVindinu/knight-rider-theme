@@ -110,6 +110,7 @@
     <script>
 
         $("#start").eq(0).on('click', () => {
+            $("section>div").css({display: 'block'});
             const duration = 2;
             const delayBetweenAnimations = 0.1;
             const totalElements = 7;
@@ -140,6 +141,10 @@
             };
 
             loopAnimations();
+        });
+
+        $("#stop").eq(0).on('click', () => {
+            $("section>div").css({display: 'none'});
         });
 
 
