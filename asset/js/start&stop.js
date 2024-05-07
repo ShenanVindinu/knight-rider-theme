@@ -1,4 +1,7 @@
+let audio = document.getElementById("backgroundAudio");
+
 $("#start").eq(0).on('click', () => {
+    audio.play();
     $("section>div").css({display: 'block'});
     const duration = 2;
     const delayBetweenAnimations = 0.1;
@@ -33,5 +36,6 @@ $("#start").eq(0).on('click', () => {
 });
 
 $("#stop").eq(0).on('click', () => {
+    audio.pause();
     $("section>div").css({display: 'none'});
 });
